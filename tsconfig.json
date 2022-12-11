@@ -27,10 +27,15 @@
     // "useDefineForClassFields": true,                  /* Emit ECMAScript-standard-compliant class fields. */
     // "moduleDetection": "auto",                        /* Control what method is used to detect module-format JS files. */
     /* Modules */
-    "module": "commonjs", 
-    "rootDir": "./src",   // 指定需要编译的区域
+
+    "sourceMap": true,
+    /* Create source map files for emitted JavaScript files. */
+
+    "module": "commonjs",
+    "rootDir": "./src", // 指定需要编译的区域
     "outDir": "./dist", // 导出的文件夹       
-    "removeComments": true,                           /* Disable emitting comments. */
+    "removeComments": true,
+    /* Disable emitting comments. */
     "noEmitOnError": true, // 若是有ts语法错误不会生成js文件
     // "moduleResolution": "node",                       /* Specify how TypeScript looks up a file from a given module specifier. */
     // "baseUrl": "./",                                  /* Specify the base directory to resolve non-relative module names. */
@@ -50,10 +55,9 @@
     // "declaration": true,                              /* Generate .d.ts files from TypeScript and JavaScript files in your project. */
     // "declarationMap": true,                           /* Create sourcemaps for d.ts files. */
     // "emitDeclarationOnly": true,                      /* Only output d.ts files and not JavaScript files. */
-    // "sourceMap": true,                                /* Create source map files for emitted JavaScript files. */
     // "outFile": "./",                                  /* Specify a file that bundles all outputs into one JavaScript file. If 'declaration' is true, also designates a file that bundles all .d.ts output. */
-            
-      // "noEmit": true,                                   /* Disable emitting files from a compilation. */
+
+    // "noEmit": true,                                   /* Disable emitting files from a compilation. */
     // "importHelpers": true,                            /* Allow importing helper functions from tslib once per project, instead of including them per-file. */
     // "importsNotUsedAsValues": "remove",               /* Specify emit/checking behavior for imports that are only used for types. */
     // "downlevelIteration": true,                       /* Emit more compliant, but verbose and less performant JavaScript for iteration. */
@@ -72,11 +76,14 @@
     /* Interop Constraints */
     // "isolatedModules": true,                          /* Ensure that each file can be safely transpiled without relying on other imports. */
     // "allowSyntheticDefaultImports": true,             /* Allow 'import x from y' when a module doesn't have a default export. */
-    "esModuleInterop": true, /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "esModuleInterop": true,
+    /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
     // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
-    "forceConsistentCasingInFileNames": true, /* Ensure that casing is correct in imports. */
+    "forceConsistentCasingInFileNames": true,
+    /* Ensure that casing is correct in imports. */
     /* Type Checking */
-    "strict": true, /* Enable all strict type-checking options. */
+    "strict": true,
+    /* Enable all strict type-checking options. */
     // "noImplicitAny": true,  //开启后不指定参数类型会出现红色波浪线                     /* Enable error reporting for expressions and declarations with an implied 'any' type. */
     // "strictNullChecks": true, // 开启后会做精确的Jo空值检测         /* When type checking, take into account 'null' and 'undefined'. */
     // "strictFunctionTypes": true,                      /* When assigning functions, check to ensure parameters and the return values are subtype-compatible. */
